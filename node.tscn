@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=4 uid="uid://dm0876hj03aeu"]
+[gd_scene load_steps=7 format=4 uid="uid://dm0876hj03aeu"]
 
+[ext_resource type="Script" uid="uid://dtbt4gtqjvrvl" path="res://player.gd" id="1_112p8"]
 [ext_resource type="Texture2D" uid="uid://daycrka3pbg6k" path="res://icon.svg" id="1_sy5k4"]
 [ext_resource type="Texture2D" uid="uid://bmswea7e2vfpf" path="res://blue(1).png" id="2_j2q8x"]
 
@@ -48,6 +49,7 @@ sources/0 = SubResource("TileSetAtlasSource_112p8")
 [node name="Node" type="Node"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_112p8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(443, 325)
