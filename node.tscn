@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm0876hj03aeu"]
+
+[ext_resource type="Texture2D" uid="uid://daycrka3pbg6k" path="res://icon.svg" id="1_sy5k4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2q8x"]
+size = Vector2(210, 273)
+
+[sub_resource type="TileSet" id="TileSet_112p8"]
+
+[node name="Node" type="Node"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(806, 656)
+scale = Vector2(1.65625, 2.09375)
+texture = ExtResource("1_sy5k4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(807, 656.5)
+shape = SubResource("RectangleShape2D_j2q8x")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_112p8")
